@@ -1,0 +1,116 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer > .container {
+  display: flex;
+  column-gap: 70px;
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: var(--margin20);
+}
+
+.logo-part-footer,
+.address {
+  color: var(--text-white-color);
+}
+
+.footer .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contact-footer {
+  color: var(--text-link-footer-color);
+}
+
+.footer .address:hover,
+.footer .address:focus,
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--text-acent-color);
+}
+
+.soc-icon-wrap {
+  padding-top: 12px;
+}
+
+.title-footer {
+  margin-bottom: var(--margin20);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--bgc-white-color);
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.footer .team-soc-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .soc-icon {
+  fill: var(--bgc-white-color);
+}
+
+.team-soc-link {
+  transition: fill var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--text-acent-color);
+}
+
+.input-footer {
+  display: block;
+  margin-left: auto;
+
+  padding-top: 12px;
+}
+
+.input-footer input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-footer-wrap .input-btn {
+  margin-left: 12px;
+}
+
+.input-btn:hover,
+.input-btn:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.input-footer-wrap {
+  display: flex;
+}
+
+.input-btn-icon {
+  margin-left: 10px;
+}

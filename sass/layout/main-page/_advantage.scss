@@ -1,0 +1,28 @@
+.advantage-icon-wrap {
+  display: flex;
+  height: 120px;
+  width: 270px;
+  margin-bottom: var(--margin30);
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bgc-light-grey-color);
+}
+
+.advantage-title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--text-dark-color);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.advantage-list .item:not(:last-child) {
+  margin-right: var(--margin30);
+}
+
+.advantage-list .item {
+  width: 270px;
+}

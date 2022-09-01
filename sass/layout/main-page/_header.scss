@@ -1,0 +1,84 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  margin-right: 93px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--text-acent-color);
+}
+
+.logo-part {
+  color: var(--text-black-color);
+}
+
+.site-nav {
+  .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-dark-color);
+  }
+  .item:not(:last-child) {
+    margin-right: var(--margin50);
+  }
+  .current {
+    color: var(--text-acent-color);
+  }
+}
+
+.link.current {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+
+  background: var(--text-acent-color);
+}
+
+.header-nav {
+  align-items: center;
+}
+
+.container-flex {
+  align-items: center;
+}
+
+.auth-nav {
+  margin-left: auto;
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-main-color);
+  }
+  .item:not(:last-child) {
+    margin-right: var(--margin50);
+  }
+}
+
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
