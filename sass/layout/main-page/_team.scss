@@ -42,22 +42,3 @@
   justify-content: center;
   column-gap: 10px;
 }
-
-.team-soc-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-
-  fill: #afb1b8;
-  transition: fill var(--duration) var(--timing-function),
-    background-color var(--duration) var(--timing-function);
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  fill: var(--bgc-white-color);
-  background-color: var(--text-acent-color);
-}

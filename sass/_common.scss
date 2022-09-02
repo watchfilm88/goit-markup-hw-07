@@ -56,25 +56,53 @@ body {
   padding-bottom: 94px;
 }
 
-.header-nav,
-.site-nav,
-.auth-nav,
-.container-flex,
-.advantage-list,
+.navigation,
+.site-navigation,
+.auth-navigation,
+.container--flex,
+.advantage__list,
 .work-list,
 .team-list,
 .card-set {
   display: flex;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: var(--text-acent-color);
-}
-
 .hero,
 .footer {
   background-color: var(--bgc-dark-grey-color);
+}
+
+.logo {
+  margin-right: 93px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--text-acent-color);
+}
+
+.logo--black {
+  color: var(--text-black-color);
+}
+
+.logo--inversion {
+  color: var(--text-white-color);
+}
+
+.team-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+
+  fill: #afb1b8;
+  transition: fill var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--bgc-white-color);
+    background-color: var(--text-acent-color);
+  }
 }

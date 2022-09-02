@@ -20,33 +20,35 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container container-flex">
-        <nav class="header-nav">
+      <div class="container container--flex">
+        <nav class="navigation">
           <a href="./index.html" class="logo link" lang="en"
-            >Web<span class="logo-part">Studio</span></a
+            >Web<span class="logo--black">Studio</span></a
           >
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link current">Студия</a>
+          <ul class="site-navigation list">
+            <li class="site-navigation__item">
+              <a href="./index.html" class="site-navigation__link link current">Студия</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+            <li class="site-navigation__item">
+              <a href="./portfolio.html" class="site-navigation__link link">Портфолио</a>
             </li>
-            <li class="item"><a href="#contacts" class="link">Контакты</a></li>
+            <li class="site-navigation__item">
+              <a href="#contacts" class="site-navigation__link link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="list auth-nav">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link contacts-mail">
-              <svg class="header-icon" width="16" height="12">
+        <ul class="list auth-navigation">
+          <li class="auth-navigation__item">
+            <a href="mailto:info@devstudio.com" class="auth-navigation__link link">
+              <svg class="auth-navigation-icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link contacts-tel">
-              <svg class="header-icon" width="10" height="16">
+            <a href="tel:+380961111111" class="auth-navigation__link link">
+              <svg class="auth-navigation-icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +380961111111</a
@@ -59,16 +61,16 @@
       <!-- hero -->
       <section class="hero section">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="btn btn-hero" data-modal-open>Заказать услугу</button>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="btn hero__btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- advantage -->
       <section class="advantage section">
-        <div class="container container-advantage">
+        <div class="container">
           <h2 class="visually-hidden">Преимущества работы с нами</h2>
-          <ul class="list advantage-list">
-            <li class="item">
+          <ul class="list advantage__list">
+            <li class="advantage__item">
               <div class="advantage-icon-wrap">
                 <svg class="advantage-icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
@@ -79,7 +81,7 @@
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="item">
+            <li class="advantage__item">
               <div class="advantage-icon-wrap">
                 <svg class="advantage-icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
@@ -90,7 +92,7 @@
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
+            <li class="advantage__item">
               <div class="advantage-icon-wrap">
                 <svg class="advantage-icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-Vector"></use>
@@ -101,7 +103,7 @@
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="item">
+            <li class="advantage__item">
               <div class="advantage-icon-wrap">
                 <svg class="advantage-icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
@@ -453,22 +455,22 @@
     </main>
     <!-- футер -->
     <footer class="footer">
-      <div class="container">
-        <div class="adress-wrap">
+      <div class="container footer-container">
+        <div class="adress">
           <a href="./index.html" class="logo link" lang="en"
-            >Web<span class="logo-part-footer">Studio</span></a
+            >Web<span class="logo--inversion">Studio</span></a
           >
           <address id="contacts">
-            <ul class="list">
-              <li class="item">
-                <a href="https://goo.gl/maps/6EJtzGpYEQnjh2rM8" class="link address"
+            <ul class="address__list list">
+              <li class="address__item item">
+                <a href="https://goo.gl/maps/6EJtzGpYEQnjh2rM8" class="link address__link"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="item">
+              <li class="address__item item">
                 <a href="mailto:info@example.com" class="link contact-footer">info@example.com</a>
               </li>
-              <li class="item">
+              <li class="address__item item">
                 <a href="tel:+380961111111" class="link contact-footer">+380961111111</a>
               </li>
             </ul>
@@ -478,28 +480,28 @@
           <p class="title-footer">присоединяйтесь</p>
           <ul class="team-soc-list list">
             <li class="team-soc-item">
-              <a href="" class="team-soc-link link">
+              <a href="" class="footer-soc-icon team-soc-link link">
                 <svg class="soc-icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="team-soc-item">
-              <a href="" class="team-soc-link link">
+              <a href="" class="footer-soc-icon team-soc-link link">
                 <svg class="soc-icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="team-soc-item">
-              <a href="" class="team-soc-link link">
+              <a href="" class="footer-soc-icon team-soc-link link">
                 <svg class="soc-icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="team-soc-item">
-              <a href="" class="team-soc-link link">
+              <a href="" class="footer-soc-icon team-soc-link link">
                 <svg class="soc-icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>

@@ -18,10 +18,9 @@
   fill: #afb1b8;
   transition: fill var(--duration) var(--timing-function),
     border-color var(--duration) var(--timing-function);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  fill: var(--text-acent-color);
-  border-color: var(--text-acent-color);
+  &:hover,
+  &:focus {
+    fill: var(--text-acent-color);
+    border-color: var(--text-acent-color);
+  }
 }

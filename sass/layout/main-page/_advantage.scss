@@ -19,10 +19,10 @@
   text-transform: uppercase;
 }
 
-.advantage-list .item:not(:last-child) {
+.advantage__item:not(:last-child) {
   margin-right: var(--margin30);
 }
 
-.advantage-list .item {
+.advantage__item {
   width: 270px;
 }
